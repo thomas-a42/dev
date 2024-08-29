@@ -1,0 +1,12 @@
+<script>
+	var idade = window.prompt('Quantos anos você tem?')
+	if(isNaN(idade) || idade<0){
+		window.alert('Idade inválida');
+		location.reload();
+	}else if(idade>=18){
+		document.write('Seja bem vindo!');
+	}else{
+		window.alert('Desculpe, você não tem idade suficiente para acessar.');
+		window.close()
+	}
+</script>

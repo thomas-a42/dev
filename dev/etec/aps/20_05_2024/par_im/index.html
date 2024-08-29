@@ -1,0 +1,12 @@
+<script>
+	var num = window.prompt('Digite um número: ');
+	console.log(num%2)
+	if(isNaN(num)){
+		window.alert('Valor inválido');
+		location.reload();
+	}else if(num%2!=0){
+		document.write('<h1>O número digitado é ímpar.</h1><p><a href="index.html">Verificar um novo número</p>');
+	}else{
+		document.write('<h1>O número digitado é par.</h1><p><a href="index.html">Verificar um novo número</p>');
+	}
+</script>
